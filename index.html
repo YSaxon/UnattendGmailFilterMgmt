@@ -4,8 +4,16 @@
     <title>Create Gmail Filter</title>
 </head>
 <body>
-    <button id="authorize_button" style="display: none;">Authorize</button>
-    <script src="https://apis.google.com/js/api.js"></script>
+    <html>
+  <body>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <div id="g_id_onload"
+         data-client_id="646186548146-la6kd7ume0ba66m5c74l8cgi23jmrj2q.apps.googleusercontent.com"
+         data-callback="handleCredentialResponse">
+    </div>
+    <div class="g_id_signin" data-type="standard"></div>
+  </body>
+</html>
     <script src="app.js"></script>
 </body>
 </html>
